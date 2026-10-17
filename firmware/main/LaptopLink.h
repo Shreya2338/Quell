@@ -82,6 +82,7 @@ public:
       return;
     }
 
+    // Read incoming bytes into a line buffer (stops while a line is waiting).
     while (_client.available() && !_lineReady) {
       int c = _client.read();
       if (c < 0) break;
@@ -98,8 +99,10 @@ public:
 
   bool connected() const { return _connected; }
 
+  // Optional: print connection progress, e.g. laptop.setDebug(&Serial);
   void setDebug(Print* p) { _dbg = p; }
 
+  // Copies one complete line (without newline) into out. Returns false if no full line has arrived yet.
   bool readLine(char* out, size_t outSize) {
     xSemaphoreTake(_mutex, portMAX_DELAY);
     bool ready = _lineReady;

@@ -23,26 +23,26 @@ public:
     }
     uint8_t status;
     if (!read(REG_STATUS, status)) return false;
-    if ((status >> 5) != 7) return false;           // 7 = DRV2605L
+    if ((status >> 5) != 7) return false; // 7 = DRV2605L
 
-    write(REG_MODE, 0x80);                           // device reset
+    write(REG_MODE, 0x80); // device reset
     uint32_t t0 = millis();
     uint8_t mode = 0x80;
-    while ((mode & 0x80) && millis() - t0 < 50) {    // wait for reset to clear
+    while ((mode & 0x80) && millis() - t0 < 50) { // wait for reset to clear
       delay(2);
       read(REG_MODE, mode);
     }
-    write(REG_MODE, 0x00);                           // leave standby
+    write(REG_MODE, 0x00); // leave standby
 
-    write(REG_FEEDBACK, 0x36);                       // bit7 = 0 -> ERM
-    write(REG_CONTROL3, 0xA8);                       // ERM open loop, RTP unsigned
-    write(REG_LIBRARY, 1);                           // ERM library (for effects)
+    write(REG_FEEDBACK, 0x36); // bit7 = 0 -> ERM
+    write(REG_CONTROL3, 0xA8); // ERM open loop, RTP unsigned
+    write(REG_LIBRARY, 1); // ERM library (for effects)
 
     // Voltage registers: ~20.58 mV/LSB (rated), ~21.96 mV/LSB (overdrive clamp)
     write(REG_RATED_V, constrain((int)(ratedVolts / 0.02058f), 0, 255));
     write(REG_OD_CLAMP, constrain((int)(ratedVolts / 0.02196f), 0, 255));
 
-    write(REG_MODE, MODE_RTP);                       // real-time playback
+    write(REG_MODE, MODE_RTP); // real-time playback
     write(REG_RTP, 0);
     _ready = true;
     return true;
@@ -84,7 +84,7 @@ public:
     uint32_t el = now - _phaseStart;
     if (_burstOn) {
       if (el >= _p.onMs) {
-        if (_p.offMs == 0) { _phaseStart = now; el = 0; }   // continuous
+        if (_p.offMs == 0) { _phaseStart = now; el = 0; } // continuous
         else { _burstOn = false; _phaseStart = now; setIntensity(0); return; }
       }
       float scale = 1.0f;

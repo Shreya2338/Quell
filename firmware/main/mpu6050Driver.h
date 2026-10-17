@@ -21,6 +21,7 @@ public:
     _wire = &wire;
     _wire->setClock(i2cClock);
 
+    // Wake up, use gyro X PLL as clock (more stable than internal 8 MHz)
     if (!writeReg(REG_PWR_MGMT_1, 0x80)) return false;   // device reset
     delay(100);
     if (!writeReg(REG_PWR_MGMT_1, 0x01)) return false;
@@ -65,7 +66,7 @@ public:
 
   /**
    * Non-blocking poll. Returns true (and updates data) when a new sample
-   * period has elapsed. Call it from loop(); it costs almost nothing when it's not time yet.
+   * period has elapsed. Call it from loop(); it costs ~nothing when it's not time yet.
    */
   bool poll() {
     if (!_initialized) return false;
@@ -73,7 +74,7 @@ public:
     if ((int32_t)(now - _nextTickUs) < 0) return false;
 
     _nextTickUs += _periodUs;
-    // If fell far behind (e.g. long blocking call), resync instead of bursting
+    // If we fell far behind (e.g. long blocking call), resync instead of bursting
     if ((int32_t)(now - _nextTickUs) > (int32_t)(_periodUs * 4)) _nextTickUs = now + _periodUs;
 
     return update();
@@ -113,6 +114,7 @@ public:
   /**
    * Blocking calibration (~samples / rate seconds; 500 samples ~ 2.5 s at 200 Hz).
    * Keep the board still and flat (Z axis pointing up).
+   * Returns false (and keeps old offsets) if I2C fails or motion was detected.
    */
   bool calibrate(uint16_t samples = 500, float motionThresholdDps = 3.0f) {
     if (!_initialized || samples == 0) return false;
@@ -129,8 +131,14 @@ public:
       Vec3 a, g; float t;
       if (!readScaled(a, g, t)) return false;
 
-      sa[0] += a.x; sa[1] += a.y; sa[2] += a.z;
-      sg[0] += g.x; sg[1] += g.y; sg[2] += g.z;
+      sa[0] += a.x; 
+      sa[1] += a.y; 
+      sa[2] += a.z;
+
+      sg[0] += g.x; 
+      sg[1] += g.y; 
+      sg[2] += g.z;
+
       float gv[3] = {g.x, g.y, g.z};
       for (int k = 0; k < 3; k++) {
         if (gv[k] < gmin[k]) gmin[k] = gv[k];
@@ -144,6 +152,7 @@ public:
 
     float n = (float)samples;
     _gyroOffset  = {(float)(sg[0] / n), (float)(sg[1] / n), (float)(sg[2] / n)};
+    // Expect (0, 0, +1 g) when flat
     _accelOffset = {(float)(sa[0] / n), (float)(sa[1] / n), (float)(sa[2] / n) - 1.0f};
 
     // Restart orientation estimate from the now-clean readings
@@ -161,8 +170,8 @@ public:
   void setFilterAlpha(float a) { _alpha = constrain(a, 0.0f, 1.0f); }
   void resetYaw() { _orient.yaw = 0; }
 
-  const Vec3 &accel() const { return _accel; }            
-  const Vec3 &gyro() const { return _gyro; }              
+  const Vec3 &accel() const { return _accel; } 
+  const Vec3 &gyro() const { return _gyro; } 
   const Orientation &orientation() const { return _orient; }
   float temperatureC() const { return _temperature; }
 
