@@ -122,10 +122,10 @@ private:
   }
 
   TwoWire &_w;
-  int8_t   _en;
-  uint8_t  _addr;
-  bool     _ready = false, _running = false, _burstOn = false;
-  uint8_t  _lastRtp = 0xFF;
+  int8_t _en;
+  uint8_t _addr;
+  bool _ready = false, _running = false, _burstOn = false;
+  uint8_t _lastRtp = 0xFF;
   uint32_t _phaseStart = 0, _runStart = 0;
-  Pattern  _p;
+  Pattern _p;
 };
