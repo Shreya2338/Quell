@@ -1,0 +1,10 @@
+{
+  "description": "Monitor and manage Parkinson's tremors with an interactive platform for patients and clinicians, offering medication tracking, data insights, and therapy effectiveness.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
