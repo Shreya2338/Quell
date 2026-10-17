@@ -1,0 +1,4672 @@
+[
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:49:31Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 3.52,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:49:32Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 3.91,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:49:33Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.3,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:49:35Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.3,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:49:36Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 3.91,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:49:37Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.69,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:49:38Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.64,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:49:40Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.64,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:49:41Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.69,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:49:42Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.08,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:49:43Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.86,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:49:45Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.3,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:49:46Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 7.03,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:49:47Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.08,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:49:49Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.69,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:49:50Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.08,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:49:51Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 7.03,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:49:52Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.3,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:49:54Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:49:55Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.86,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:49:56Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.86,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:49:58Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.3,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:49:59Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:50:00Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.47,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:50:01Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 3.91,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:50:03Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:50:04Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.64,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:50:05Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:50:07Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:50:08Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.3,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:50:09Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 3.52,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:50:10Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.69,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:50:12Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:50:13Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.64,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:50:14Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:50:15Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.3,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:50:17Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.47,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:50:18Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.3,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:50:19Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.69,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:50:21Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 7.03,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:50:22Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 7.03,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:50:23Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.86,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:50:24Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 3.91,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:50:26Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 3.91,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:50:27Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.86,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:50:28Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.47,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:50:30Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.69,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:50:31Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.69,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:50:32Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.69,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:50:33Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.08,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:50:35Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 3.91,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:50:36Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 3.91,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:50:37Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.3,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:50:39Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 3.52,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:50:40Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.69,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:50:41Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.3,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:50:42Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.69,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:50:44Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.3,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:50:45Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.86,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:50:46Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:50:47Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.64,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:50:49Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.08,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:50:50Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.86,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:50:51Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:50:53Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.64,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:50:54Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.64,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:50:55Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.86,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:50:56Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.47,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:50:58Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 3.91,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:50:59Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.47,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:51:00Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 3.52,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:51:02Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 3.91,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:51:03Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.47,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:51:04Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.3,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:51:05Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.08,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:51:07Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.08,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:51:08Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.08,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:51:09Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 7.81,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:51:11Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.69,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:51:12Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.69,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:51:13Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 7.42,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:51:14Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 3.91,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:51:16Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 3.52,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:51:17Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.3,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:51:18Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:51:19Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.86,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:51:21Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 7.42,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:51:22Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:51:23Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.69,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:51:25Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:51:26Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.3,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:51:27Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 7.42,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:51:28Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 7.03,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:51:30Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.3,
+    "tremor_intensity_score": 1,
+    "tremor_detected": true,
+    "dyskinesia_detected": false,
+    "vibration_active": true
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:51:31Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 3.52,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:51:32Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.86,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:51:34Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.3,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:51:35Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.47,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:51:36Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.08,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:51:37Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:51:39Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 3.91,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:51:40Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.64,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:51:41Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.69,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:51:43Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.08,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:51:44Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 3.91,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:51:45Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 7.03,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:51:46Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 3.52,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:51:48Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.08,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:51:49Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.08,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:51:50Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.08,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:51:51Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 8.2,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:51:53Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.64,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:51:54Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 7.03,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:51:55Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.47,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:51:57Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.86,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:51:58Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 3.91,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:51:59Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:52:00Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.08,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:52:02Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.47,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:52:03Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:52:04Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.86,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:52:06Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.47,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:52:07Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:52:08Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.47,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:52:09Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.86,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:52:11Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.86,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:52:12Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.47,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:52:13Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.69,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:52:15Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:52:16Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 3.91,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:52:17Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 7.03,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:52:18Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.08,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:52:20Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 3.91,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:52:21Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.64,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:52:22Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.3,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:52:23Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.3,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:52:25Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.64,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:52:26Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.47,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:52:27Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 3.52,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:52:29Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.86,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:52:30Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.47,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:52:31Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.08,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:52:32Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 8.2,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:52:34Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.3,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:52:35Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.08,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:52:36Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.64,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:52:38Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.64,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:52:39Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.08,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:52:40Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 3.52,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:52:41Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 3.52,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:52:43Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.69,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:52:44Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.69,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:52:45Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:52:47Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.69,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:52:48Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.3,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:52:49Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:52:50Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.3,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:52:52Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.86,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:52:53Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 3.52,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:52:54Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.64,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:52:55Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.69,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:52:57Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.3,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:52:58Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.86,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:52:59Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.08,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:53:01Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.86,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:53:02Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 7.81,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:53:03Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.47,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:53:04Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:53:06Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.08,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:53:07Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.47,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:53:08Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:53:10Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.64,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:53:11Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.86,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:53:12Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.47,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:53:13Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.64,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:53:15Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 3.91,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:53:16Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:53:17Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 7.03,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:53:19Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.47,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:53:20Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.47,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:53:21Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.69,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:53:22Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.86,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:53:24Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.3,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:53:25Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 7.03,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:53:26Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 7.42,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:53:27Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.08,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:53:29Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:53:30Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.47,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:53:31Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 7.03,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:53:33Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.69,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:53:34Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 3.91,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:53:35Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:53:36Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.47,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:53:38Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:53:39Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.3,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:53:40Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 7.42,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:53:42Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 7.03,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:53:43Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 3.52,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:53:44Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.08,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:53:45Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.3,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:53:47Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.08,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:53:48Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.08,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:53:49Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.47,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:53:51Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.86,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:53:52Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.86,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:53:53Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.64,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:53:54Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 3.91,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:53:56Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.47,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:53:57Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.47,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:53:58Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 3.91,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:53:59Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.86,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:54:01Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 7.03,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:54:02Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.64,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:54:03Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 7.81,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:54:05Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 7.03,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:54:06Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.64,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:54:07Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:54:08Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.69,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:54:10Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 7.42,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:54:11Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.3,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:54:12Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.08,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:54:14Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.47,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:54:15Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.47,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:54:16Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 7.42,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:54:17Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.69,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:54:19Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 8.2,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:54:20Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.86,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:54:21Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.47,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:54:23Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.64,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:54:24Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.86,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:54:25Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.64,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:54:26Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 3.91,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:54:28Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 7.03,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:54:29Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.47,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:54:30Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.69,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:54:31Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 7.03,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:54:33Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 7.03,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:54:34Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:54:35Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 7.42,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:54:37Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 3.91,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:54:38Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.69,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:54:39Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.86,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:54:40Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.64,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:54:42Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.08,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:54:43Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.69,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:54:44Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.3,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:54:46Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.86,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:54:47Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 7.03,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:54:48Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.08,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:54:49Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.69,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:54:51Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.69,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:54:52Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.47,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:54:53Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 3.91,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:54:55Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:54:56Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 3.52,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:54:57Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.47,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:54:58Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.86,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:55:00Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.69,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:55:01Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:55:02Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.08,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:55:03Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.69,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:55:05Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.08,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:55:06Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 3.91,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:55:07Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.86,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:55:09Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.08,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:55:10Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.69,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:55:11Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.86,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:55:12Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.64,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:55:14Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.08,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:55:15Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.69,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:55:16Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 7.81,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:55:18Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.69,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:55:19Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.86,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:55:20Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:55:21Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.08,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:55:23Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.08,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:55:24Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 7.03,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:55:25Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.08,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:55:27Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 7.42,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:55:28Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:55:29Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.69,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:55:30Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.3,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:55:32Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 7.03,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:55:33Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.47,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:55:34Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.47,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:55:35Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.86,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:55:37Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:55:38Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.08,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:55:39Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 7.03,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:55:41Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 3.52,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:55:42Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:55:43Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.86,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:55:44Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:55:46Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 7.42,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:55:47Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 3.52,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:55:48Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.69,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:55:50Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 7.42,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:55:51Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.64,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:55:52Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.86,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:55:53Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 7.03,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:55:55Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 8.2,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:55:56Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 7.42,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:55:57Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.47,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:55:59Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.47,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:56:00Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.69,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:56:01Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.86,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:56:02Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 7.03,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:56:04Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.3,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:56:05Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.64,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:56:06Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 3.91,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:56:07Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 3.52,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:56:09Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.86,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:56:10Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 7.03,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:56:11Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.69,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:56:13Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 7.03,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:56:14Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.3,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:56:15Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.69,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:56:16Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.64,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:56:18Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 7.81,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:56:19Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.64,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:56:20Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.86,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:56:22Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 7.03,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:56:23Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:56:24Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.69,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:56:25Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:56:27Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.64,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:56:28Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 8.2,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:56:29Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.47,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:56:31Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.86,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:56:32Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 3.12,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:56:33Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.64,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:56:34Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:56:36Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 3.91,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:56:37Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:56:38Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.47,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:56:39Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.08,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:56:41Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.69,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:56:42Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.86,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:56:43Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 3.52,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:56:45Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.3,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:56:46Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.86,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:56:47Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:56:48Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.86,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:56:50Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 7.81,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:56:51Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:56:52Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:56:54Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.08,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:56:55Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.3,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:56:56Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.64,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:56:57Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.69,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:56:59Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.69,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:57:00Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.69,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:57:01Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.86,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:57:03Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.08,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:57:04Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.69,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:57:05Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:57:06Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:57:08Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.86,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:57:09Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.47,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:57:10Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.64,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:57:11Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.86,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:57:13Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:57:14Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 3.91,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:57:15Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.69,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:57:17Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.64,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:57:18Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 3.91,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:57:19Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:57:20Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 3.91,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:57:22Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 7.03,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:57:23Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.47,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:57:24Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:57:26Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.3,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:57:27Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:57:28Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:57:29Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 7.03,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:57:31Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.3,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:57:32Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.64,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:57:33Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 7.03,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:57:35Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.3,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:57:36Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 7.42,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:57:37Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.69,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:57:38Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.47,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:57:40Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.86,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:57:41Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 7.03,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:57:42Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:57:43Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.08,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:57:45Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 7.03,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:57:46Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.08,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:57:47Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.69,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:57:49Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.08,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:57:50Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.86,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:57:51Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.86,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:57:52Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 7.81,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:57:54Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.47,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:57:55Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.86,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:57:56Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:57:58Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.08,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:57:59Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.69,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:58:00Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 8.59,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:58:01Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.69,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:58:03Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.3,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:58:04Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.69,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:58:05Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:58:07Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.3,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:58:08Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 3.91,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:58:09Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:58:10Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.08,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:58:12Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.3,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:58:13Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:58:14Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.47,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:58:15Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.69,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:58:17Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.08,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:58:18Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.86,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:58:19Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:58:21Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 7.42,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:58:22Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:58:23Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 3.91,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:58:24Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 3.91,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:58:26Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.86,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:58:27Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.3,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:58:28Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.64,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:58:30Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:58:31Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:58:32Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.69,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:58:33Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 3.52,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:58:35Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.08,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:58:36Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.08,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:58:37Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.69,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:58:39Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:58:40Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:58:41Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.86,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:58:42Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.86,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:58:44Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:58:45Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 3.91,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:58:46Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.08,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:58:47Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.47,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:58:49Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 7.42,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:58:50Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 3.52,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:58:51Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:58:53Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.08,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:58:54Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.64,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:58:55Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:58:56Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.47,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:58:58Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.3,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:58:59Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.69,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:59:00Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 3.91,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:59:02Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.47,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:59:03Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.3,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:59:04Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.08,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:59:05Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.3,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:59:07Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.86,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:59:08Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.69,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:59:09Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.64,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:59:11Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 3.91,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:59:12Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.64,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:59:13Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.08,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:59:14Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.08,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:59:16Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.69,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:59:17Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 3.91,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:59:18Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 5.86,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:59:19Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 3.52,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:59:21Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 4.3,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:59:22Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 3.91,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:59:23Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.64,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:59:25Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:59:26Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  },
+  {
+    "device_id": "esp32_wristband_01",
+    "timestamp": "2026-10-15T05:59:27Z",
+    "event_type": "telemetry",
+    "dominant_frequency_hz": 6.25,
+    "tremor_intensity_score": 0,
+    "tremor_detected": false,
+    "dyskinesia_detected": false,
+    "vibration_active": false
+  }
+]
