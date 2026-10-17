@@ -1,0 +1,51 @@
+from typing import List, Literal, Union
+from pydantic import BaseModel, Field
+
+# ---------------------------------------------------------------------------
+# INCOMING CONTRACTS (Received independently from hardware)
+# ---------------------------------------------------------------------------
+
+class ImuPayload(BaseModel):
+    """
+    Sensor payload received as an atomic packet:
+    {"gyroscope": [x, y, z], "accelerometer": [x, y, z]}
+    """
+    gyroscope: List[float] = Field(..., min_length=3, max_length=3)
+    accelerometer: List[float] = Field(..., min_length=3, max_length=3)
+
+class ActuationTelemetryPayload(BaseModel):
+    """
+    Actuator state received when stimulation starts/stops or updates:
+    {"actuation_state": 1, "actuation_intensity": 120}
+    """
+    actuation_state: Literal[0, 1]
+    actuation_intensity: int  # Frequency in Hz
+
+
+class CalibrationStatusPayload(BaseModel):
+    """
+    Received upon completion of calibration routine:
+    {"caliberation_status": 1}
+    """
+    caliberation_status: Literal[0, 1]
+
+
+# ---------------------------------------------------------------------------
+# OUTGOING CONTRACTS (Sent to hardware)
+# ---------------------------------------------------------------------------
+
+class VibrationCommand(BaseModel):
+    """
+    Trigger vibration on hardware:
+    {"length": 250, "intensity": 150}
+    """
+    length: int  # in ms
+    intensity: int  # in Hz
+
+
+class CalibrateCommand(BaseModel):
+    """
+    Tell hardware to start calibration:
+    {"calibrate_now": True}
+    """
+    calibrate_now: bool = True
