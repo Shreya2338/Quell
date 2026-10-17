@@ -1,0 +1,20 @@
+# Sampling and DSP settings
+SAMPLING_RATE_HZ = 100.0
+BUTTERWORTH_ORDER = 4
+BANDPASS_LOW_HZ = 3.5
+BANDPASS_HIGH_HZ = 7.5
+FFT_WINDOW_SIZE = 256
+FFT_HOP_SIZE = 128
+
+# Tremor detection boundaries
+TREMOR_FREQ_MIN_HZ = 4.0
+TREMOR_FREQ_MAX_HZ = 6.0
+
+# Haptic therapy settings
+HAPTIC_CARRIER_HZ = 250.0
+PULSE_ON_MS = 100
+PULSE_OFF_MS = 67
+
+# Medication schedule guardrails
+MIN_INTER_DOSE_HOURS = 3.5
+DEFAULT_DOSE_INTERVAL_HOURS = 4.0
