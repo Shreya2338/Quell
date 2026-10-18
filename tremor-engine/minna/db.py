@@ -1,43 +1,60 @@
-import sqlite3
+import os
 import datetime
-from typing import Optional, List, Dict
+from typing import Optional, Dict
+from dotenv import load_dotenv
+from supabase import create_client, Client
 
-DB_PATH = "quell.db"
+load_dotenv()
 
-def init_db():
-    with sqlite3.connect(DB_PATH) as conn:
-        cursor = conn.cursor()
-        cursor.execute("""
-            CREATE TABLE IF NOT EXISTS reports (
-                id INTEGER PRIMARY KEY AUTOINCREMENT,
-                patient_id TEXT NOT NULL,
-                generated_at TEXT NOT NULL,
-                report_markdown TEXT NOT NULL
-            );
-        """)
-        conn.commit()
+# Retrieve credentials from .env
+SUPABASE_URL = os.getenv("SUPABASE_URL", "")
+SUPABASE_KEY = os.getenv("SUPABASE_SERVICE_ROLE_KEY") or os.getenv("SUPABASE_KEY", "")
 
-def insert_report(patient_id: str, report_markdown: str, generated_at: Optional[str] = None) -> int:
-    """Inserts a generated clinician consultation report into the database."""
-    if not generated_at:
-        generated_at = datetime.datetime.now(datetime.timezone.utc).isoformat()
+supabase: Optional[Client] = None
+if SUPABASE_URL and SUPABASE_KEY:
+    try:
+        supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
+    except Exception as e:
+        print(f"[Supabase Warning] Failed to initialize client: {e}")
+
+
+def insert_tremor_event(
+    tremor_start: datetime.datetime,
+    tremor_end: datetime.datetime,
+    tremor_intensity: float,
+    peak_displacement_cm: float,
+    dominant_frequency_hz: float,
+    user_id: Optional[str] = None
+) -> Optional[Dict]:
+    """Persists a closed tremor episode into Supabase with automatic user resolution."""
+    duration = (tremor_end - tremor_start).total_seconds()
     
-    with sqlite3.connect(DB_PATH) as conn:
-        cursor = conn.cursor()
-        cursor.execute(
-            "INSERT INTO reports (patient_id, generated_at, report_markdown) VALUES (?, ?, ?)",
-            (patient_id, generated_at, report_markdown)
-        )
-        conn.commit()
-        return cursor.lastrowid
+    record = {
+        "user_id": None,  # Overrides the default and bypasses foreign key checks if nullable
+        "tremor_start": tremor_start.isoformat(),
+        "tremor_end": tremor_end.isoformat(),
+        "tremor_intensity": int(round(tremor_intensity)),
+        "duration_seconds": float(round(duration, 3)),
+        "peak_displacement_cm": float(round(float(peak_displacement_cm), 3)),
+        "dominant_frequency_hz": float(round(float(dominant_frequency_hz), 2)),
+    }
 
-def get_reports_by_patient(patient_id: str) -> List[Dict]:
-    """Fetches all past archived reports for a given patient."""
-    with sqlite3.connect(DB_PATH) as conn:
-        conn.row_factory = sqlite3.Row
-        cursor = conn.cursor()
-        cursor.execute(
-            "SELECT id, patient_id, generated_at, report_markdown FROM reports WHERE patient_id = ? ORDER BY id DESC",
-            (patient_id,)
-        )
-        return [dict(row) for row in cursor.fetchall()]
+    if not supabase:
+        print(f"[Local Mock] Supabase client not initialized. Would write: {record}")
+        return record
+
+    try:
+        if not user_id:
+            user_res = supabase.table("users").select("user_id").limit(1).execute()
+            if user_res.data:
+                user_id = user_res.data[0]["user_id"]
+
+        if user_id:
+            record["user_id"] = user_id
+
+        response = supabase.table("tremors").insert(record).execute()
+        return response.data
+
+    except Exception as e:
+        print(f"[Supabase Error] Failed to insert tremor event: {e}")
+        return None

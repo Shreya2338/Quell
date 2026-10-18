@@ -1,11 +1,14 @@
-from typing import Dict, Any
+from typing import Dict
 
 class TASSActuator:
-    def __init__(self, min_hz: int = 20, max_hz: int = 250):
+    def __init__(self, min_hz: int = 20, max_hz: int = 250, max_duration_sec: int = 180):
         self.min_hz = min_hz
         self.max_hz = max_hz
+        self.max_duration_sec = max_duration_sec
         self.current_state = 0
         self.current_hz = 0
+        self.is_active = False
+        self.elapsed_active_sec = 0.0
 
     def hz_to_percent(self, hz: int) -> float:
         """Converts frequency in Hertz to percentage (0 - 100%) for UI sliders."""
@@ -25,6 +28,24 @@ class TASSActuator:
         self.current_state = actuation_state
         self.current_hz = actuation_intensity
 
+    def update_state(self, tremor_detected: bool, delta_time_sec: float) -> bool:
+        """Tracks stimulation duration with closed-loop safety shutoff."""
+        if tremor_detected:
+            self.is_active = True
+            self.current_state = 1
+            self.current_hz = self.max_hz
+            self.elapsed_active_sec += delta_time_sec
+            if self.elapsed_active_sec >= self.max_duration_sec:
+                self.is_active = False
+                self.current_state = 0
+                self.elapsed_active_sec = 0.0
+        else:
+            self.is_active = False
+            self.current_state = 0
+            self.elapsed_active_sec = 0.0
+
+        return self.is_active
+
     def create_vibration_command(self, length_ms: int, intensity_val: int, is_percent: bool = False) -> Dict[str, int]:
         """Generates outbound vibration payload for hardware."""
         hz_val = self.percent_to_hz(intensity_val) if is_percent else intensity_val
@@ -38,3 +59,6 @@ class TASSActuator:
         return {
             "calibrate_now": True
         }
+
+# Alias to support both casing conventions
+TassActuator = TASSActuator
