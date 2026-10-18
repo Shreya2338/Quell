@@ -19,42 +19,25 @@ if SUPABASE_URL and SUPABASE_KEY:
 
 
 def insert_tremor_event(
+    #device_id: str,
     tremor_start: datetime.datetime,
     tremor_end: datetime.datetime,
     tremor_intensity: float,
     peak_displacement_cm: float,
-    dominant_frequency_hz: float,
-    user_id: Optional[str] = None
-) -> Optional[Dict]:
-    """Persists a closed tremor episode into Supabase with automatic user resolution."""
+    dominant_frequency_hz: float
+) -> Optional[Dict[str, Any]]:
     duration = (tremor_end - tremor_start).total_seconds()
     
     record = {
-        "user_id": None,  # Overrides the default and bypasses foreign key checks if nullable
+        #"device_id": str(device_id),
         "tremor_start": tremor_start.isoformat(),
         "tremor_end": tremor_end.isoformat(),
-        "tremor_intensity": int(round(tremor_intensity)),
-        "duration_seconds": float(round(duration, 3)),
-        "peak_displacement_cm": float(round(float(peak_displacement_cm), 3)),
-        "dominant_frequency_hz": float(round(float(dominant_frequency_hz), 2)),
+        # If duration or intensity in your Supabase table is an INTEGER / BIGINT:
+        "duration_seconds": round(float(duration), 2),
+        "tremor_intensity": int(round(tremor_intensity)),  # <--- CAST TO INT (1 instead of 1.0)
+        "peak_displacement_cm": round(float(peak_displacement_cm), 3),
+        "dominant_frequency_hz": round(float(dominant_frequency_hz), 2)
     }
 
-    if not supabase:
-        print(f"[Local Mock] Supabase client not initialized. Would write: {record}")
-        return record
-
-    try:
-        if not user_id:
-            user_res = supabase.table("users").select("user_id").limit(1).execute()
-            if user_res.data:
-                user_id = user_res.data[0]["user_id"]
-
-        if user_id:
-            record["user_id"] = user_id
-
-        response = supabase.table("tremors").insert(record).execute()
-        return response.data
-
-    except Exception as e:
-        print(f"[Supabase Error] Failed to insert tremor event: {e}")
-        return None
+    response = supabase.table("tremors").insert(record).execute()
+    return response.data

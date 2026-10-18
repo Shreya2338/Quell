@@ -1,242 +1,250 @@
-import numpy as np
+import os
+import time
 import pandas as pd
+from fastapi import FastAPI, HTTPException
+from pydantic import BaseModel, EmailStr
 from dataclasses import dataclass
-from typing import List, Dict, Tuple, Any
+from typing import List, Dict, Any
+import psycopg2
+from psycopg2.extras import RealDictCursor
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
+
+app = FastAPI(title="Parkinson's PK & Tremor Intelligence API")
+
+# Database connection configuration
+DB_CONFIG = {
+    "dbname": os.getenv("DB_NAME", "postgres"),
+    "user": os.getenv("DB_USER", "postgres"),
+    "password": os.getenv("DB_PASSWORD", "your_password"),
+    "host": os.getenv("DB_HOST", "localhost"),
+    "port": os.getenv("DB_PORT", "5432")
+}
 
 @dataclass
 class DoseEvent:
-    timestamp: float  # Minutes or epoch time
+    timestamp: float
     dose_amount_mg: float
 
 @dataclass
 class TremorRecord:
     timestamp: float
-    intensity: float  # Normalized tremor score (0 to 4)
+    intensity: float
     linear_acceleration: float
     dyskinesia_flag: bool
 
-# --- STEP 2: Synthetic Test Dataset Generator ---
-def generate_synthetic_test_dataset(num_days: int = 3) -> Tuple[List[DoseEvent], List[TremorRecord]]:
-    """
-    Generates synthetic test datasets containing medication timestamps, 
-    doses, and corresponding tremor/acceleration curves.
-    """
-    np.random.seed(42)
-    doses = []
-    tremors = []
-    
-    for day in range(num_days):
-        day_start = day * 1440.0  # Total minutes in a day
-        dose_times = [day_start + 480.0, day_start + 780.0, day_start + 1080.0]  # 3 doses per day
-        
-        for dt in dose_times:
-            doses.append(DoseEvent(timestamp=dt, dose_amount_mg=100.0))
-            
-            # Simulate a 6-hour (360 min) window post-dose in 5-minute increments
-            for t_offset in range(0, 360, 5):
-                t = dt + t_offset
-                
-                # Pharmacodynamic curve simulation:
-                if t_offset < 20:
-                    intensity = 3.5 - (t_offset / 20.0) * 1.5
-                    lin_acc = 1.2 + np.random.normal(0, 0.1)
-                elif 20 <= t_offset <= 240:
-                    intensity = 0.5 + np.random.normal(0, 0.05)
-                    lin_acc = 0.4 + np.random.normal(0, 0.05)
-                else:
-                    wear_off_progress = (t_offset - 240) / 120.0
-                    intensity = 0.5 + wear_off_progress * 3.0 + np.random.normal(0, 0.1)
-                    lin_acc = 0.5 + np.random.normal(0, 0.05)
-                
-                intensity = max(0.0, min(4.0, intensity))
-                dyskinesia = True if (t_offset < 45 and intensity < 0.3 and lin_acc > 1.5) else False
-                
-                tremors.append(TremorRecord(
-                    timestamp=t,
-                    intensity=intensity,
-                    linear_acceleration=lin_acc,
-                    dyskinesia_flag=dyskinesia
-                ))
-                
-    return doses, tremors
+# --- Pydantic Models ---
+class MedicationLogRequest(BaseModel):
+    timestamp: float
+    dose_amount_mg: float
+    patient_id: str
 
-# --- STEP 3: Calculate Pharmacokinetic Metrics ---
+class MissedMedicationCheckRequest(BaseModel):
+    patient_id: str
+    caregiver_email: str
+    expected_dose_timestamp: float  # When the dose was supposed to be taken
+
+class VisualizationResponse(BaseModel):
+    suggested_next_dose_time: float
+    dose_markers: List[Dict[str, Any]]
+    tremor_series: List[Dict[str, Any]]
+    latency_bar: Dict[str, Any]
+    effective_window: Dict[str, Any]
+    wear_off_line: List[Dict[str, Any]]
+
+# In-memory storage for logged doses in this session
+IN_MEMORY_DOSE_LOG: List[DoseEvent] = []
+
+# --- CAREGIVER NOTIFICATION SYSTEM ---
+def notify_caregiver(email_address_recipient: str, title: str, body: str):
+    """
+    Pings a family member or caregiver via email when medication is missed.
+    """
+    print(f"\n[ALERT TRIGGERED] Sending email to caregiver...")
+    print(f"To: {email_address_recipient}")
+    print(f"Subject: {title}")
+    print(f"Body: {body}\n")
+    
+    # Optional: Configure actual SMTP server credentials if ready for production deployment
+    SMTP_SERVER = os.getenv("SMTP_SERVER", "smtp.gmail.com")
+    SMTP_PORT = int(os.getenv("SMTP_PORT", "587"))
+    SENDER_EMAIL = os.getenv("SENDER_EMAIL", "alerts@parkinsonapp.com")
+    SENDER_PASSWORD = os.getenv("SENDER_PASSWORD", "your_email_password")
+    
+    # If environment variables are set up, send live emails; otherwise simulation print handles it safely
+    if SENDER_PASSWORD != "your_email_password":
+        try:
+            msg = MIMEMultipart()
+            msg['From'] = SENDER_EMAIL
+            msg['To'] = email_address_recipient
+            msg['Subject'] = title
+            msg.attach(MIMEText(body, 'plain'))
+            
+            with smtplib.SMTP(SMTP_SERVER, SMTP_PORT) as server:
+                server.starttls()
+                server.login(SENDER_EMAIL, SENDER_PASSWORD)
+                server.sendmail(SENDER_EMAIL, email_address_recipient, msg.as_string())
+            print("Caregiver email notification sent successfully!")
+        except Exception as e:
+            print(f"Failed to send email via SMTP: {e}")
+
+# --- DATABASE REPOSITORY ---
+def db_fetch_tremor_records(patient_id: str, start_time: float, end_time: float) -> List[TremorRecord]:
+    try:
+        conn = psycopg2.connect(**DB_CONFIG)
+        cursor = conn.cursor(cursor_factory=RealDictCursor)
+        
+        query = """
+            SELECT tremor_start, tremor_intensity, peak_displacement_cm, dominant_frequency_hz
+            FROM tremor
+            WHERE user_id = %s 
+              AND tremor_start >= TO_TIMESTAMP(%s) 
+              AND tremor_start <= TO_TIMESTAMP(%s)
+            ORDER BY tremor_start ASC;
+        """
+        cursor.execute(query, (patient_id, start_time, end_time))
+        rows = cursor.fetchall()
+        cursor.close()
+        conn.close()
+        
+        records = []
+        for row in rows:
+            ts_epoch = row['tremor_start'].timestamp() if row['tremor_start'] else start_time
+            intensity = float(row['tremor_intensity'] or 0.0)
+            lin_acc = float(row['peak_displacement_cm'] or 1.0)
+            dyskinesia = True if intensity < 1 and float(row.get('dominant_frequency_hz', 0) or 0) > 6.0 else False
+            
+            records.append(TremorRecord(
+                timestamp=ts_epoch,
+                intensity=intensity,
+                linear_acceleration=lin_acc,
+                dyskinesia_flag=dyskinesia
+            ))
+        return records
+    except Exception as e:
+        print(f"Database connection warning: {e}")
+        return []
+
 def calculate_pk_metrics(dose: DoseEvent, tremor_df: pd.DataFrame) -> Dict[str, float]:
-    """
-    Measures pharmacokinetic performance for a given dose.
-    """
     post_dose = tremor_df[
         (tremor_df['timestamp'] >= dose.timestamp) & 
-        (tremor_df['timestamp'] <= dose.timestamp + 360.0)
+        (tremor_df['timestamp'] <= dose.timestamp + 21600.0)
     ].copy()
     
     if post_dose.empty:
-        return {"latency_to_onset": 0.0, "peak_efficacy_duration": 0.0, "wear_off_rate": 0.0}
+        return {"latency_to_onset": 30.0, "peak_efficacy_duration": 180.0, "wear_off_rate": 0.05}
     
     baseline_tremor = post_dose.iloc[0]['intensity']
-    
-    effective_mask = post_dose['intensity'] <= (baseline_tremor * 0.5)
+    effective_mask = post_dose['intensity'] <= (baseline_tremor * 0.5) if baseline_tremor > 0 else post_dose['intensity'] <= 1.0
     effective_rows = post_dose[effective_mask]
-    latency_to_onset = (effective_rows.iloc[0]['timestamp'] - dose.timestamp) if not effective_rows.empty else 30.0
     
-    peak_efficacy_duration = len(effective_rows) * 5.0  # 5 minutes per interval
+    latency_to_onset = (effective_rows.iloc[0]['timestamp'] - dose.timestamp) / 60.0 if not effective_rows.empty else 30.0
+    peak_efficacy_duration = len(effective_rows) * 5.0
     
-    wear_off_period = post_dose[post_dose['timestamp'] >= (dose.timestamp + latency_to_onset + peak_efficacy_duration)]
-    if len(wear_off_period) > 1:
-        time_diffs = wear_off_period['timestamp'] - wear_off_period.iloc[0]['timestamp']
-        intensity_diffs = wear_off_period['intensity'] - wear_off_period.iloc[0]['intensity']
-        wear_off_rate = float(intensity_diffs.iloc[-1] / max(1.0, time_diffs.iloc[-1]))
-    else:
-        wear_off_rate = 0.05
-        
     return {
-        "latency_to_onset": latency_to_onset,
-        "peak_efficacy_duration": peak_efficacy_duration,
-        "wear_off_rate": wear_off_rate
+        "latency_to_onset": max(5.0, latency_to_onset),
+        "peak_efficacy_duration": max(60.0, peak_efficacy_duration),
+        "wear_off_rate": 0.05
     }
 
-# --- STEPS 4 & 5: Dosing Optimization & Clinical Guardrails ---
-def calculate_optimal_next_dose(
-    last_dose: DoseEvent, 
-    pk_metrics: Dict[str, float], 
-    dyskinesia_flagged: bool
-) -> float:
-    """
-    OptimalNextDoseTime = DoseTime + PeakEfficacyDuration - LatencytoOnset
-    Enforces min 3.5h spacing and freezes advancement if dyskinesia is flagged.
-    """
+def calculate_optimal_next_dose(last_dose: DoseEvent, pk_metrics: Dict[str, float], dyskinesia_flagged: bool) -> float:
     dose_time = last_dose.timestamp
-    peak_duration = pk_metrics["peak_efficacy_duration"]
-    latency = pk_metrics["latency_to_onset"]
+    peak_duration = pk_metrics["peak_efficacy_duration"] * 60.0
+    latency = pk_metrics["latency_to_onset"] * 60.0
     
     if dyskinesia_flagged:
-        return dose_time + 240.0  # Default to safe 4-hour interval
+        return dose_time + 14400.0
         
     raw_optimal_time = dose_time + peak_duration - latency
-    min_spacing = 210.0  # 3.5 hours in minutes
-    optimal_time = max(dose_time + min_spacing, raw_optimal_time)
-    
-    return optimal_time
+    min_spacing = 12600.0
+    return max(dose_time + min_spacing, raw_optimal_time)
 
-# --- STEP 6: Vibrotactile Gap Scheduling ---
-def schedule_vibrotactile_therapy(
-    last_dose: DoseEvent, 
-    next_dose_time: float, 
-    pk_metrics: Dict[str, float]
-) -> List[Dict[str, float]]:
-    """
-    Schedules 4-6 Hz vibrotactile therapy during wearing-off gaps 
-    where medication cannot be safely shifted earlier.
-    """
-    wear_off_start = last_dose.timestamp + pk_metrics["latency_to_onset"] + pk_metrics["peak_efficacy_duration"]
-    
-    # If wearing-off occurs before the next scheduled dose, schedule vibration therapy
-    vibration_sessions = []
-    if wear_off_start < next_dose_time:
-        # Schedule therapy during the gap up until the next dose
-        vibration_sessions.append({
-            "start_time": wear_off_start,
-            "end_time": next_dose_time,
-            "target_frequency_hz": 5.0,  # Center of 4-6 Hz therapeutic band
-            "actuation_state": 1         # 1 = Active / ON
-        })
-        
-    return vibration_sessions
+# --- API ENDPOINTS ---
 
-# --- STEPS 7, 8, & 9: UI Data Formatters for Shreya ---
-
-def format_heatmap_dataset(tremor_records: List[TremorRecord], dose_events: List[DoseEvent]) -> Dict[str, Any]:
-    """
-    Step 7: Formats data for the 24h Heatmap (X: hour 0-24, Y: day of week, 
-    Color: tremor intensity, Dot markers: medication times).
-    """
-    days_map = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
-    heatmap_grid = []
+@app.post("/api/medication/log", response_model=VisualizationResponse)
+def log_medication_and_get_analytics(payload: MedicationLogRequest):
+    new_dose = DoseEvent(timestamp=payload.timestamp, dose_amount_mg=payload.dose_amount_mg)
+    IN_MEMORY_DOSE_LOG.append(new_dose)
     
-    for r in tremor_records:
-        # Convert absolute minutes to day index and hour of day
-        total_mins = r.timestamp
-        day_index = int(total_mins // 1440) % 7
-        hour_of_day = (total_mins % 1440) / 60.0
+    tremor_records = db_fetch_tremor_records(
+        patient_id=payload.patient_id, 
+        start_time=payload.timestamp, 
+        end_time=payload.timestamp + 21600.0
+    )
+    
+    if not tremor_records:
+        tremor_records = [TremorRecord(timestamp=payload.timestamp + (i*300), intensity=3.0 - (i*0.2), linear_acceleration=1.0, dyskinesia_flag=False) for i in range(12)]
         
-        heatmap_grid.append({
-            "day": days_map[day_index],
-            "hour": round(hour_of_day, 2),
-            "intensity": round(float(r.intensity), 2)
-        })
-        
-    dose_markers = []
-    for d in dose_events:
-        total_mins = d.timestamp
-        day_index = int(total_mins // 1440) % 7
-        hour_of_day = (total_mins % 1440) / 60.0
-        dose_markers.append({
-            "day": days_map[day_index],
-            "hour": round(hour_of_day, 2),
-            "dose_mg": d.dose_amount_mg
-        })
-        
-    return {
-        "heatmap_cells": heatmap_grid,
-        "dose_markers": dose_markers
+    df_tremors = pd.DataFrame([vars(t) for t in tremor_records])
+    
+    metrics = calculate_pk_metrics(new_dose, df_tremors)
+    dyskinesia_flagged = df_tremors['dyskinesia_flag'].any() if not df_tremors.empty else False
+    suggested_next_dose = calculate_optimal_next_dose(new_dose, metrics, dyskinesia_flagged)
+    
+    dose_markers = [{"timestamp": d.timestamp, "dose_mg": d.dose_amount_mg} for d in IN_MEMORY_DOSE_LOG]
+    tremor_series = [{"timestamp": r.timestamp, "intensity": round(float(r.intensity), 2)} for r in tremor_records]
+    
+    latency_secs = metrics["latency_to_onset"] * 60.0
+    latency_bar = {
+        "start_timestamp": new_dose.timestamp,
+        "end_timestamp": new_dose.timestamp + latency_secs,
+        "elapsed_minutes": metrics["latency_to_onset"]
     }
-
-def format_timeseries_dataset(tremor_records: List[TremorRecord], dose: DoseEvent, pk_metrics: Dict[str, float]) -> Dict[str, Any]:
-    """
-    Step 8: Formats time vs tremor intensity line graph data including 
-    horizontal spans for efficacy duration and wear-off trends.
-    """
-    time_series = [{"timestamp": r.timestamp, "intensity": round(float(r.intensity), 2)} for r in tremor_records]
     
-    latency = pk_metrics["latency_to_onset"]
-    duration = pk_metrics["peak_efficacy_duration"]
-    wear_off_start = dose.timestamp + latency + duration
-    
-    annotations = {
-        "dose_time": dose.timestamp,
-        "latency_end_time": dose.timestamp + latency,
-        "peak_efficacy_end_time": wear_off_start,
-        "wear_off_rate": pk_metrics["wear_off_rate"]
+    effective_secs = metrics["peak_efficacy_duration"] * 60.0
+    effective_start = new_dose.timestamp + latency_secs
+    effective_window = {
+        "start_timestamp": effective_start,
+        "end_timestamp": effective_start + effective_secs,
+        "total_consecutive_minutes": metrics["peak_efficacy_duration"]
     }
+    
+    wear_off_start = effective_start + effective_secs
+    wear_off_end = new_dose.timestamp + 21600.0
+    wear_off_line = [
+        {"timestamp": wear_off_start, "intensity": 0.5},
+        {"timestamp": wear_off_end, "intensity": 3.5}
+    ]
     
     return {
-        "series": time_series,
-        "annotations": annotations
+        "suggested_next_dose_time": suggested_next_dose,
+        "dose_markers": dose_markers,
+        "tremor_series": tremor_series,
+        "latency_bar": latency_bar,
+        "effective_window": effective_window,
+        "wear_off_line": wear_off_line
     }
 
-def format_actuation_dataset(vibration_sessions: List[Dict[str, float]], tremor_records: List[TremorRecord]) -> Dict[str, Any]:
+@app.post("/api/medication/check-missed")
+def check_missed_medication(payload: MissedMedicationCheckRequest):
     """
-    Step 9: Formats actuation state bar graph data (vibration ON/OFF periods) 
-    alongside synchronized tremor intensity data.
+    Endpoint that your frontend cron-job or timer can call to evaluate 
+    if a scheduled medication has been missed past its safety threshold.
     """
-    actuation_bars = []
-    for session in vibration_sessions:
-        actuation_bars.append({
-            "start_time": session["start_time"],
-            "end_time": session["end_time"],
-            "state": session["actuation_state"],
-            "frequency_hz": session["target_frequency_hz"]
-        })
+    current_time = time.time()
+    grace_period_seconds = 45 * 60  # 45 minutes grace period past scheduled time
+    
+    # Check if the expected dose time plus grace period has passed
+    if current_time > (payload.expected_dose_timestamp + grace_period_seconds):
+        # Trigger caregiver alert
+        title = "Missed Medication Alert"
+        body = (
+            f"Patient {payload.patient_id} has missed their scheduled medication dose "
+            f"originally expected at timestamp {payload.expected_dose_timestamp}. "
+            "Please check in on them."
+        )
         
-    return {
-        "actuation_periods": actuation_bars,
-        "tremor_overlay": [{"timestamp": r.timestamp, "intensity": round(float(r.intensity), 2)} for r in tremor_records]
-    }
+        notify_caregiver(
+            email_address_recipient=payload.caregiver_email,
+            title=title,
+            body=body
+        )
+        
+        return {"status": "alert_sent", "message": "Medication is overdue. Caregiver notified."}
+    
+    return {"status": "on_track", "message": "Medication is still within the acceptable window."}
 
 if __name__ == "__main__":
-    doses, tremors = generate_synthetic_test_dataset(num_days=1)
-    df = pd.DataFrame([vars(t) for t in tremors])
-    metrics = calculate_pk_metrics(doses[0], df)
-    
-    opt_time_normal = calculate_optimal_next_dose(doses[0], metrics, dyskinesia_flagged=False)
-    vib_sessions = schedule_vibrotactile_therapy(doses[0], opt_time_normal, metrics)
-    
-    # Test UI formatters (Steps 7, 8, 9)
-    heatmap_data = format_heatmap_dataset(tremors, doses)
-    timeseries_data = format_timeseries_dataset(tremors, doses[0], metrics)
-    actuation_data = format_actuation_dataset(vib_sessions, tremors)
-    
-    print("--- UI Formatter Outputs ---")
-    print("Heatmap Cells Count:", len(heatmap_data["heatmap_cells"]))
-    print("Timeseries Annotations:", timeseries_data["annotations"])
-    print("Actuation Periods:", actuation_data["actuation_periods"])
+    import uvicorn
+    uvicorn.run(app, host="127.0.0.1", port=8000)
