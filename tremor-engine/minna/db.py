@@ -41,3 +41,4 @@ def insert_tremor_event(
 
     response = supabase.table("tremors").insert(record).execute()
     return response.data
+

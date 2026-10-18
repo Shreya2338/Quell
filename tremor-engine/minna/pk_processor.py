@@ -1,15 +1,11 @@
 import os
-import time
 import pandas as pd
 from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel, EmailStr
+from pydantic import BaseModel
 from dataclasses import dataclass
 from typing import List, Dict, Any
 import psycopg2
 from psycopg2.extras import RealDictCursor
-import smtplib
-from email.mime.text import MIMEText
-from email.mime.multipart import MIMEMultipart
 
 app = FastAPI(title="Parkinson's PK & Tremor Intelligence API")
 
@@ -24,26 +20,21 @@ DB_CONFIG = {
 
 @dataclass
 class DoseEvent:
-    timestamp: float
+    timestamp: float  # Epoch time
     dose_amount_mg: float
 
 @dataclass
 class TremorRecord:
     timestamp: float
-    intensity: float
-    linear_acceleration: float
+    intensity: float  
+    linear_acceleration: float  
     dyskinesia_flag: bool
 
-# --- Pydantic Models ---
 class MedicationLogRequest(BaseModel):
-    timestamp: float
+    timestamp: float  # Epoch timestamp when medication was taken
     dose_amount_mg: float
-    patient_id: str
-
-class MissedMedicationCheckRequest(BaseModel):
-    patient_id: str
-    caregiver_email: str
-    expected_dose_timestamp: float  # When the dose was supposed to be taken
+    patient_id: str   
+    caregiver_email: str  # Added to route email notifications to the correct recipient
 
 class VisualizationResponse(BaseModel):
     suggested_next_dose_time: float
@@ -56,41 +47,14 @@ class VisualizationResponse(BaseModel):
 # In-memory storage for logged doses in this session
 IN_MEMORY_DOSE_LOG: List[DoseEvent] = []
 
-# --- CAREGIVER NOTIFICATION SYSTEM ---
-def notify_caregiver(email_address_recipient: str, title: str, body: str):
-    """
-    Pings a family member or caregiver via email when medication is missed.
-    """
-    print(f"\n[ALERT TRIGGERED] Sending email to caregiver...")
-    print(f"To: {email_address_recipient}")
-    print(f"Subject: {title}")
-    print(f"Body: {body}\n")
-    
-    # Optional: Configure actual SMTP server credentials if ready for production deployment
-    SMTP_SERVER = os.getenv("SMTP_SERVER", "smtp.gmail.com")
-    SMTP_PORT = int(os.getenv("SMTP_PORT", "587"))
-    SENDER_EMAIL = os.getenv("SENDER_EMAIL", "alerts@parkinsonapp.com")
-    SENDER_PASSWORD = os.getenv("SENDER_PASSWORD", "your_email_password")
-    
-    # If environment variables are set up, send live emails; otherwise simulation print handles it safely
-    if SENDER_PASSWORD != "your_email_password":
-        try:
-            msg = MIMEMultipart()
-            msg['From'] = SENDER_EMAIL
-            msg['To'] = email_address_recipient
-            msg['Subject'] = title
-            msg.attach(MIMEText(body, 'plain'))
-            
-            with smtplib.SMTP(SMTP_SERVER, SMTP_PORT) as server:
-                server.starttls()
-                server.login(SENDER_EMAIL, SENDER_PASSWORD)
-                server.sendmail(SENDER_EMAIL, email_address_recipient, msg.as_string())
-            print("Caregiver email notification sent successfully!")
-        except Exception as e:
-            print(f"Failed to send email via SMTP: {e}")
+# NOTE: send_email contract is assumed to exist externally as requested:
+# def send_email(to_email: str, title: str, body: str) -> None:
 
-# --- DATABASE REPOSITORY ---
+
 def db_fetch_tremor_records(patient_id: str, start_time: float, end_time: float) -> List[TremorRecord]:
+    """
+    Queries the actual PostgreSQL 'tremor' table using columns from database schema.
+    """
     try:
         conn = psycopg2.connect(**DB_CONFIG)
         cursor = conn.cursor(cursor_factory=RealDictCursor)
@@ -105,6 +69,7 @@ def db_fetch_tremor_records(patient_id: str, start_time: float, end_time: float)
         """
         cursor.execute(query, (patient_id, start_time, end_time))
         rows = cursor.fetchall()
+        
         cursor.close()
         conn.close()
         
@@ -123,7 +88,7 @@ def db_fetch_tremor_records(patient_id: str, start_time: float, end_time: float)
             ))
         return records
     except Exception as e:
-        print(f"Database connection warning: {e}")
+        print(f"Database connection error: {e}")
         return []
 
 def calculate_pk_metrics(dose: DoseEvent, tremor_df: pd.DataFrame) -> Dict[str, float]:
@@ -157,14 +122,29 @@ def calculate_optimal_next_dose(last_dose: DoseEvent, pk_metrics: Dict[str, floa
         return dose_time + 14400.0
         
     raw_optimal_time = dose_time + peak_duration - latency
-    min_spacing = 12600.0
+    min_spacing = 12600.0  # 3.5 hours minimum spacing
     return max(dose_time + min_spacing, raw_optimal_time)
-
-# --- API ENDPOINTS ---
 
 @app.post("/api/medication/log", response_model=VisualizationResponse)
 def log_medication_and_get_analytics(payload: MedicationLogRequest):
     new_dose = DoseEvent(timestamp=payload.timestamp, dose_amount_mg=payload.dose_amount_mg)
+    
+    # Check if a previous dose exists to evaluate if this dose was logged late/missed
+    if len(IN_MEMORY_DOSE_LOG) > 0:
+        last_logged_dose = IN_MEMORY_DOSE_LOG[-1]
+        # Calculate expected timing based on previous metrics (e.g., if gap exceeds 5 hours / 18000 seconds)
+        time_since_last_dose = new_dose.timestamp - last_logged_dose.timestamp
+        grace_period_threshold = 18000.0  # 5 hours
+        
+        if time_since_last_dose > grace_period_threshold:
+            # Trigger caregiver notification email function contract
+            send_email(
+                to_email=payload.caregiver_email,
+                title="Alert: Potential Missed or Delayed Medication Dose",
+                body=(f"Patient logged medication {time_since_last_dose / 3600:.1f} hours after the previous dose. "
+                      f"This exceeds the expected dosing interval threshold.")
+            )
+
     IN_MEMORY_DOSE_LOG.append(new_dose)
     
     tremor_records = db_fetch_tremor_records(
@@ -215,35 +195,6 @@ def log_medication_and_get_analytics(payload: MedicationLogRequest):
         "effective_window": effective_window,
         "wear_off_line": wear_off_line
     }
-
-@app.post("/api/medication/check-missed")
-def check_missed_medication(payload: MissedMedicationCheckRequest):
-    """
-    Endpoint that your frontend cron-job or timer can call to evaluate 
-    if a scheduled medication has been missed past its safety threshold.
-    """
-    current_time = time.time()
-    grace_period_seconds = 45 * 60  # 45 minutes grace period past scheduled time
-    
-    # Check if the expected dose time plus grace period has passed
-    if current_time > (payload.expected_dose_timestamp + grace_period_seconds):
-        # Trigger caregiver alert
-        title = "Missed Medication Alert"
-        body = (
-            f"Patient {payload.patient_id} has missed their scheduled medication dose "
-            f"originally expected at timestamp {payload.expected_dose_timestamp}. "
-            "Please check in on them."
-        )
-        
-        notify_caregiver(
-            email_address_recipient=payload.caregiver_email,
-            title=title,
-            body=body
-        )
-        
-        return {"status": "alert_sent", "message": "Medication is overdue. Caregiver notified."}
-    
-    return {"status": "on_track", "message": "Medication is still within the acceptable window."}
 
 if __name__ == "__main__":
     import uvicorn
