@@ -1,5 +1,6 @@
 # Quell
 A smart tremor-monitoring platform connecting wearable therapy, real-time insights, and collaborative Parkinson’s care. We're not just tracking, we're treating.
+Team: Shreya Sharma, Aisha Nishikawa, Niya Kamath, Minna Choi
 
 #  🏥 The Background
 Over 10 million people worldwide are diagnosed with Parkinson's, 80% of which suffer from severe, daily motor complications as oral medications inevitably fail to maintain a steady therapeutic window as neurodegeneration advances. 
