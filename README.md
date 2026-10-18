@@ -12,21 +12,21 @@ Relying on fixed schedules and paper diaries leaves doctors blind to medication 
 # ⛑️ Our Solution - Quelling the Pain
 After researching the biological breakdown of Parkinson’s, we realized that traditional devices act as digital bystanders, simply counting tremors while patients remain trapped between exhausting shaking and sudden motor freezing. 
 Quell closes that loop with three critical interventions:
-###1. Active Relief at the Fingertips 
+1. Active Relief at the Fingertips 
 Applying Prof. Peter Tass’s [patented research on vibrotactile stimulation] (https://pmc.ncbi.nlm.nih.gov/articles/PMC8771098/), the wristband delivers targeted fingertip micro-pulses that disrupt chaotic brain signals and quell tremors in real time, reducing the harsh symptoms that patients suffer from in their day-to-day lives. 
 
-###2. Smarter Medication Windows
+2. Smarter Medication Windows
 As dopamine storage degrades, rigid medication schedules fail to prevent wearing-off tremors and peak-dose dyskinesia. 
 Quell maps tremors against dose timestamps to suggest an optimized medicine ingestion schedule in the form of a medical report available to the patient's clinician/doctor, eliminating likely untreated off-state gaps under the supervision of your personal healthcare provider.
 
-###3. Early Warning Alerts Preventing Emergencies
+3. Early Warning Alerts Preventing Emergencies
 Rather than waiting for the emergency or injury to occur, Quell focuses on prevention. 
 Quell catches rising tremor patterns 20 to 45 minutes before full motor freezing sets in and immediately dispatches an explainable alert to caregivers and nurses: telling them not just that risk is present, but exactly why 
 >*Dose overdue by 25 min; resting tremor rising, high fall risk on next transfer* 
 
 Caregivers can step in to assist with walking and administer care before an accident ever happens.
 
-#📚 The Scientific Framework
+# 📚 The Scientific Framework
 ##Vibrotactile Coordinated Reset (vCR)
 - **The Clinical Problem**: As Parkinson's progresses, basal ganglia circuits become abnormally synchronized, driving 4–6 Hz resting tremors. Monotonous vibration causes rapid sensory adaptation and central habituation within seconds.
 
