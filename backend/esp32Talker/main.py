@@ -3,12 +3,12 @@ Server manager: owns the queues and the child processes.
 
     ESP32 <--TCP--> [esp32 server process]
                         | sensor_q   (samples)         -> processor process
-                        | event_q    (state/calibration/connection)
+                        | event_q    (state/calibration/connection) -> manager (logged here)
                         ^ command_q  (vibrate/calibrate) <- processor / anyone
 
 Processes:
     esp32_server : esp32_communicator.run_esp32_server
-    processor    : consumes sensor_q, may push to command_q  (placeholder below)
+    processor    : processor.run_processor (DSP/classifier, Supabase, vibration triggers)
 
 Run:  python server_manager.py
 """
@@ -17,76 +17,33 @@ import logging
 import multiprocessing as mp
 import queue
 import signal
-import time
 
 from receiver import run_esp32_server
+from tremor_processor import run_processor
 
 log = logging.getLogger("manager")
 
 
-# ---------------------------------------------------------------- processor
-# Placeholder. Swap SensorProcessor for your real class when you have it.
-# Contract: process(sample) is called per sample (~200 Hz) and may return a
-# command dict, e.g. {"type": "vibrate", "length": 500, "intensity": 80}.
-
-class SensorProcessor:
-    def __init__(self):
-        self.count = 0
-        self.t0 = time.time()
-
-    def process(self, sample):
-        self.count += 1
-        if self.count % 200 == 0:
-            rate = self.count / (time.time() - self.t0)
-            log.info("processor: %d samples (%.0f Hz), last accel=%s",
-                     self.count, rate, sample["accelerometer"])
-        return None
-
-    def on_event(self, event):
-        log.info("event: %s", event)
-
-
-def run_processor(sensor_q, event_q, command_q, stop_event):
-    logging.basicConfig(level=logging.INFO,
-                        format="%(asctime)s [%(name)s] %(message)s")
-    proc = SensorProcessor()
-    while not stop_event.is_set():
-        try:
-            sample = sensor_q.get(timeout=0.1)
-        except queue.Empty:
-            sample = None
-        if sample is not None:
-            cmd = proc.process(sample)
-            if cmd:
-                command_q.put(cmd)
-        # drain device events (actuation / calibration / connection)
-        while True:
-            try:
-                proc.on_event(event_q.get_nowait())
-            except queue.Empty:
-                break
-
-
-# ---------------------------------------------------------------- manager
-
 class ServerManager:
-    def __init__(self, host="0.0.0.0", port=5000, sensor_q_size=2000):
+    def __init__(self, host="0.0.0.0", port=5000, sensor_q_size=10000):
         ctx = mp.get_context("spawn")  # same behaviour on Windows/macOS/Linux
         self.ctx = ctx
         self.host, self.port = host, port
         self.sensor_q = ctx.Queue(maxsize=sensor_q_size)
         self.event_q = ctx.Queue(maxsize=1000)
-        self.command_q = ctx.Queue()
+        self.command_q = ctx.Queue(maxsize=100)
         self.stop_event = ctx.Event()
         self.procs = {}
 
     def start(self):
-        queues = (self.sensor_q, self.event_q, self.command_q, self.stop_event)
         self.procs["esp32_server"] = self.ctx.Process(
-            target=run_esp32_server, args=queues + (self.host, self.port),
+            target=run_esp32_server,
+            args=(self.sensor_q, self.event_q, self.command_q, self.stop_event,
+                  self.host, self.port),
             name="esp32_server", daemon=True)
         self.procs["processor"] = self.ctx.Process(
-            target=run_processor, args=queues,
+            target=run_processor,
+            args=(self.sensor_q, self.command_q, self.stop_event),
             name="processor", daemon=True)
         for p in self.procs.values():
             p.start()
@@ -100,20 +57,34 @@ class ServerManager:
     def calibrate(self):
         self.command_q.put({"type": "calibrate"})
 
+    def _log_event(self, event):
+        kind = event.get("type")
+        if kind == "connection":
+            log.info("[EVENT] Connection: connected=%s addr=%s",
+                     event.get("connected"), event.get("addr"))
+        elif kind == "actuation":
+            log.info("[EVENT] Actuation: active=%s @ %d Hz",
+                     event.get("state"), event.get("intensity_hz"))
+        elif kind == "calibration":
+            log.info("[EVENT] Calibration: calibrated=%s", event.get("calibrated"))
+
     def watch(self):
-        """Block until stopped; restart nothing, just report dead children."""
+        """Block until stopped; log device events and report dead children."""
         while not self.stop_event.is_set():
+            try:
+                self._log_event(self.event_q.get(timeout=0.5))
+            except queue.Empty:
+                pass
             for name, p in self.procs.items():
                 if not p.is_alive():
                     log.error("%s died (exit code %s), shutting down", name, p.exitcode)
                     self.stop_event.set()
                     break
-            time.sleep(0.5)
 
     def stop(self):
         self.stop_event.set()
         for p in self.procs.values():
-            p.join(timeout=3)
+            p.join(timeout=5)  # processor may be saving an open episode
             if p.is_alive():
                 p.terminate()
         log.info("all processes stopped")
@@ -121,9 +92,11 @@ class ServerManager:
 
 def main():
     logging.basicConfig(level=logging.INFO,
-                        format="%(asctime)s [%(name)s] %(message)s")
+                        format="[%(asctime)s] [%(name)s] %(message)s")
+    log.info("Initializing Quell Server Manager...")
     mgr = ServerManager(port=5000)
     signal.signal(signal.SIGINT, lambda *_: mgr.stop_event.set())
+    signal.signal(signal.SIGTERM, lambda *_: mgr.stop_event.set())
     mgr.start()
     try:
         mgr.watch()
