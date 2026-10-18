@@ -27,7 +27,7 @@ Quell catches rising tremor patterns 20 to 45 minutes before full motor freezing
 Caregivers can step in to assist with walking and administer care before an accident ever happens.
 
 # 📚 The Scientific Framework
-##Vibrotactile Coordinated Reset (vCR)
+## Vibrotactile Coordinated Reset (vCR)
 - **The Clinical Problem**: As Parkinson's progresses, basal ganglia circuits become abnormally synchronized, driving 4–6 Hz resting tremors. Monotonous vibration causes rapid sensory adaptation and central habituation within seconds.
 
 - **The Mechanism**: Following Prof. Peter Tass’s research, high-frequency 250 Hz micro-bursts stimulate rapidly adapting cutaneous mechanoreceptors (Pacinian corpuscles) on median and radial nerves to act as a non-invasive sensory gate that disrupts hyper-synchronized oscillatory loops.
