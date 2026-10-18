@@ -10,6 +10,7 @@ import datetime
 import logging
 import queue
 import time
+from mailer import sendemail 
 from typing import Optional, Dict
 
 import numpy as np

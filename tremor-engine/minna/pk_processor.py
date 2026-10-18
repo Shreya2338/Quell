@@ -5,6 +5,7 @@ from pydantic import BaseModel
 from dataclasses import dataclass
 from typing import List, Dict, Any
 import psycopg2
+from backend.esp32Talker.mailer import sendemail
 from psycopg2.extras import RealDictCursor
 
 app = FastAPI(title="Parkinson's PK & Tremor Intelligence API")
