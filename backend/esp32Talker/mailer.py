@@ -1,5 +1,8 @@
 import smtplib
 from email.message import EmailMessage
+import os
+
+from dotenv import load_dotenv
 
 def send_email(to_email: str, title: str, body: str) -> None:
     """
@@ -10,11 +13,12 @@ def send_email(to_email: str, title: str, body: str) -> None:
     - title (str): Title (subject) of the email.
     - body (str): Body content of the email.
     """
+    load_dotenv()  # Load environment variables from .env file
     # Configuration (Update these with your actual SMTP server details)
     SMTP_SERVER = "smtp.gmail.com"
     SMTP_PORT = 587  # Common port for TLS
-    SENDER_EMAIL = "mcc64662@gmail.com"
-    SENDER_PASSWORD = "rbjj mpir hdop ygyd"
+    SENDER_EMAIL = os.getenv("SENDER_EMAIL")
+    SENDER_PASSWORD = os.getenv("SENDER_PASSWORD")
 
     # Construct the email message
     msg = EmailMessage()
