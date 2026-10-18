@@ -30,7 +30,7 @@ Caregivers can step in to assist with walking and administer care before an acci
 ## Vibrotactile Coordinated Reset (vCR)
 - **The Clinical Problem**: As Parkinson's progresses, basal ganglia circuits become abnormally synchronized, driving 4–6 Hz resting tremors. Monotonous vibration causes rapid sensory adaptation and central habituation within seconds.
 
-- **The Mechanism**: Following Prof. Peter Tass’s research, high-frequency 250 Hz micro-bursts stimulate rapidly adapting cutaneous mechanoreceptors (Pacinian corpuscles) on median and radial nerves to act as a non-invasive sensory gate that disrupts hyper-synchronized oscillatory loops.
+- **The Mechanism**: Following Prof. Peter Tass’s research, high-frequency 250 Hz micro-bursts in a 3:2 on-off ratio pattern stimulate rapidly adapting cutaneous mechanoreceptors (Pacinian corpuscles) on median and radial nerves to act as a non-invasive sensory gate that disrupts hyper-synchronized oscillatory loops.
 
 - **The Burst Pattern & Closed-Loop Control**: Uses an ~834ms macro cycle consisting of 3 active pulse cycles ~500ms followed by 2 silent pause cycles. Re-evaluates tremor power every 20–30 seconds; if 4–6 Hz power drops by >%50, the motor halts, with a strict 180-second safety cutoff to prevent nerve adaptation and overheating.
 
@@ -39,7 +39,7 @@ Caregivers can step in to assist with walking and administer care before an acci
 
 - **MPU 6050 (IMU)**: A 6-axis sensor (accelerometer and gyroscope) connected via I2C. Polled at 200Hz, it captures the raw spatial kinematics needed to isolate the exact 4–6 Hz frequency signature of Parkinsonian resting tremors.
 
-- **DRV2605L (Haptic Driver) + ERM Vibration Motor**: Interfaced via I2C. Upon receiving Wi-Fi commands through the ESP32, this precision driver triggers the targeted 250 Hz micro-bursts and manages the ~834ms vCR therapy cycles to safely disrupt hyper-synchronized brain signals.
+- **DRV2605L (Haptic Driver) + ERM Vibration Motor**: Interfaced via I2C. Upon receiving Wi-Fi commands through the ESP32, this precision driver triggers the targeted 250 Hz micro-bursts in a 3:2 on-off ratio pattern and manages the ~834ms vCR therapy cycles to safely disrupt hyper-synchronized brain signals.
 
 ## Edge Data Processing Pipeline
 - **Magnitude Reduction**: Squashes 6 raw IMU channels (a_x, a_y, a_z, and roll, pitch, yaw) into 2 orientation-independent scalars via Euclidean norms to fit ESP32 RAM.
