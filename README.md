@@ -1,4 +1,4 @@
-# Quell
+# Quell - Hack the Valley 2026 Winner of Best Healthcare & Wellbeing Hack
 A smart tremor-monitoring platform connecting wearable therapy, real-time insights, and collaborative Parkinson’s care. We're not just tracking, we're treating.
 
 Team: Shreya Sharma, Aisha Nishikawa, Niya Kamath, Minna Choi
